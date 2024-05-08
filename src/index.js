@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 4000;
 
 app.use(express.json());
 
-app.use('/anti-heroes', antiHeroesRoutes);
+app.use('/', antiHeroesRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server ta on fml 😶 ${PORT}`);
-    });
+});
